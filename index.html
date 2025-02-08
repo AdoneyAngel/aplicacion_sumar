@@ -28,12 +28,27 @@
         const in1 = document.getElementById("n1")
         const in2 = document.getElementById("n2")
 
-        function restar () {
-            const n1 = in1.value
-            const n2 = in2.value
+        class Operador {
+            input1
+            input2
 
-            alert(n1-n2)
+            constructor(input1, input2) {
+                this.input1 = input1
+                this.input2 = input2
+            }
+
+            restar () {
+                const n1 = this.input1.value
+                const n2 = this.input2.value
+
+                retrn (n1-n2)
+            }
         }
+
+        const operador = new Operador(in1, in2)
+
+        alert(operador.restar())
+
     </script>
 </body>
 </html>
