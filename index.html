@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicacion UT5 Tejera Santana Adoney DPL</title>
+</head>
+<body>
+    <header></header>
+
+    <br><br>
+
+    <div>
+        <input type="number" placeholder="Numero a restar" min="1" id="n1">
+        -
+        <input type="number" placeholder="Restar" min="1" id="n2">
+
+        <br>
+
+        <button onclick="restar()">Restar</button>
+    </div>
+
+    <script>
+        const in1 = document.getElementById("n1")
+        const in2 = document.getElementById("n2")
+
+        function restar () {
+            const n1 = in1.value
+            const n2 = in2.value
+
+            alert(n1-n2)
+        }
+    </script>
+</body>
+</html>
